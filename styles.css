@@ -1,6 +1,5 @@
 *{
 	margin: 0%;
-
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
@@ -14,6 +13,9 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 }
+#mob{
+	display: none;
+}
 nav ul {
 	display: flex;
 	flex-direction: row;
@@ -21,7 +23,6 @@ nav ul {
 	background-color: #26877f;
 	width: 100%;
 	height: 5em;
-	/* place-items: center center; */
 	place-content: end, space-around;
 	list-style-type: none;
 	padding: 0px;
@@ -55,6 +56,8 @@ nav ul li a:hover{
 		box-shadow: rgba(20, 20, 20, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 		overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: 100%;
 		background-image: url("https://th.bing.com/th/id/OIG4.htHzwelddcfOYZ2PVJhm?w=1024&h=1024&rs=1&pid=ImgDetMain");
 		background-position-y: 60%;
 		background-blend-mode: overlay;
@@ -107,13 +110,62 @@ article p {
 }
 footer{
 	display: flex;
-	gap : 20px;
-	padding: 0px 20px 20px 20px;
 }
 footer > div{
 
-	border-radius: 12px;
-	background-color: #26877f;
+	padding: 20px 20px 20px 20px;
+	border-left: 1px solid rgb(240, 240, 240);
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: left;
 	height: 5em;
 	flex: 1;
+}
+#foot1 > *{
+
+	display:inline;
+	padding: 20px;
+	font-size: smaller;
+	
+}
+#foot2 h3{
+	display:inline;
+	width: 100%;
+	padding: 20px;
+	font-weight: 100;
+	font-size: smaller;
+	text-align: end;
+}
+@media (max-width: 600px){
+	body{
+		background-color: #26877f;
+	}
+	header{
+		display: none;
+	}
+	#mob{
+		display: block;
+		padding: 20px 0px;
+		text-align: center;
+		width: max-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#promo  h1{
+		color: rgba(255, 255, 255, 0.966);
+		font-size: 1.8em;
+		font-weight: normal;
+		margin: 20px;
+	}
+	#blog{
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		justify-content: space-evenly;
+		
+	}
+
+	
 }
