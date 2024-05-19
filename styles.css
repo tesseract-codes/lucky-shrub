@@ -137,7 +137,7 @@ footer > div{
 	font-size: smaller;
 	text-align: end;
 }
-@media (max-width: 600px){
+@media (max-width: 931px){
 	body{
 		background-color: #26877f;
 	}
