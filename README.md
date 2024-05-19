@@ -1,4 +1,4 @@
-# lucky-shurb
+# lucky-shrub
 A responsive layout built for a client persona about a gardening company as a portfolio project.
 
 ## Overview
